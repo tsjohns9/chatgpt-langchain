@@ -1,10 +1,8 @@
 import os
+
 from dotenv import load_dotenv
 
-root_dir = os.path.dirname(os.path.abspath(__file__))
-dotenv_path = os.path.join(root_dir, ".env")
-load_dotenv(dotenv_path)
-print("------------------------->", os.environ)
+load_dotenv()
 
 
 class Config:
